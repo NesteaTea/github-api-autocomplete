@@ -1,0 +1,91 @@
+body {
+  background-color: #c4c4c4;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.repository {
+  padding: 50px;
+  width: max-content;
+  margin-inline: auto;
+  margin-top: 50px;
+}
+
+.repository__search {
+  background-color: #fff;
+  font-family: inherit;
+  font-size: 32px;
+  width: 500px;
+  height: 62px;
+  padding-left: 10px;
+}
+.repository__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background: #e27beb;
+  margin-top: 45px;
+}
+.repository__item {
+  display: flex;
+  justify-content: space-between;
+  width: 516px;
+  height: 100px;
+  box-sizing: border-box;
+  padding-left: 16px;
+  padding-right: 32px;
+  padding-block: 8px;
+  border: solid 1px black;
+}
+.repository__delete {
+  background: inherit;
+  padding: 0;
+  border: none;
+  align-self: center;
+  width: 42px;
+  height: 39px;
+  border-radius: 6px;
+  background: linear-gradient(
+      45deg,
+      transparent calc(50% - 3px),
+      red calc(50% - 3px),
+      red calc(50% + 3px),
+      transparent calc(50% + 3px)
+    ),
+    linear-gradient(
+      -45deg,
+      transparent calc(50% - 3px),
+      red calc(50% - 3px),
+      red calc(50% + 3px),
+      transparent calc(50% + 3px)
+    );
+}
+.repository__delete:hover {
+  opacity: 0.4;
+  transition-duration: 0.2s;
+}
+.repository__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+p {
+  margin-block: 5px;
+}
+.repository__dropdown {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.repository__dropdown-item {
+  cursor: pointer;
+  font-size: 22px;
+  padding: 0;
+  padding-left: 10px;
+  background: #e3e3e3;
+  border: solid 2px black;
+}
+.repository__dropdown-item:not(:last-child) {
+  border-bottom: none;
+}
+.repository__dropdown-item:hover {
+  background: #65cdf9;
+}
